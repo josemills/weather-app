@@ -1,7 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Secular+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Secular+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* ──────────────────────────────── */
+/* 🎨 Root de colores */
+/* ──────────────────────────────── */
 
 :root {
     --neutral-900: #02012C;
@@ -16,8 +17,123 @@ body {
     --orange:      #FF820A;
 }
 
-h1 {
-    color: #333;
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 30px;
+    background: var(--neutral-900);
+}
+
+/* =========================
+   HEADER LAYOUT
+========================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo izq | units der */
+}
+
+header .brand {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   UNIDAD DE SECCIONES
+========================= */
+
+.hidden {
+    display: none;
+}
+
+.dropbtn{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: var(--neutral-800);
+    border-radius: 8px;
+    border-style: none;
+    color: var(--neutral-0);
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.dropbtn:hover{
+    background-color: var(--blue-500);
+}
+
+.dropdown {
+    position: relative;
+    padding-right: 20px; /* aire visual a la derecha */
+}
+
+.dropdown-content {
+    font-family: 'DM Sans';
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0; /* dropdown alineado al botón */
+    background: var(--neutral-800);
+    color: var(--neutral-0);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 240px;
+    z-index: 100;
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+.switch-btn {
+    font-family:'DM Sans';
+    font-style: normal;
+    color: var(--neutral-0);
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border-style: none;
+    padding: 8px;
+    cursor: pointer;
+    background-color: var(--blue-500);
+}
+
+.group-title {
+    font-family: 'DM Sans';
+    font-style: medium;
+    margin-top: 12px;
+    font-size: 16px;
+    color: var(--neutral-300);
+}
+
+.option {
+    background-color: var(--neutral-700);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* =========================
+        BODY
+========================= */
+
+.main-title{
+    text-align: center;
+    color: var(--neutral-0);
+    font-family: 'Bricolage Grotesque';
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 120%;
 }
 
  

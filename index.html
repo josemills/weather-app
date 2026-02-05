@@ -7,12 +7,52 @@
     <title>Tiempo</title>
 </head>
 
-<header>
-    <div class="brand"">
+<header class="app-header">
+    <div class="brand">
         <img src="assets/web-document/logo.svg" alt="logo de la marca">
     </div>
+
+    <div class="header-actions">
+        <div class="dropdown" id="unitsDropdown">
+            <button class="dropbtn" id="unitsBtn">
+                ⚙ Units
+            </button>
+
+            <div class="dropdown-content">
+                <button class="switch-btn" id="switchUnits">
+                    Switch to Imperial
+                </button>
+
+                <div class="group">
+                    <p class="group-title">Temperature</p>
+                    <p class="option" data-type="temp">Celsius (°C)  </p>
+                    <p class="option hidden" data-type="temp">Fahrenheit (°F)</p>
+                </div>
+
+                <div class="group">
+                    <p class="group-title">Wind Speed</p>
+                    <p class="option" data-type="wind">km/h</p>
+                    <p class="option hidden" data-type="wind">mph</p>
+                </div>
+
+                <div class="group">
+                    <p class="group-title">Precipitation</p>
+                    <p class="option" data-type="rain">Millimeters (mm)</p>
+                    <p class="option hidden" data-type="rain">Inches (in)</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+
 <body>
+    <h1 class="main-title">
+        How's the sky looking today?
+    </h1>
+   
     
+
+
 </body>
+<script src="js/app.js"></script>
 </html>

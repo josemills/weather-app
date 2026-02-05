@@ -8,15 +8,27 @@
 
 Weather APP (Aplicación del tiemp), que se construye en base al consumo de la API Open-Meteo, utilizando herramientas simples para el desarrollo de la estructura HTML, diseño responsive CSS y funcionalidades con JS.
 
-## Cambios principales (resumen por archivo)
+## Cambios principales (resumen por archivo) por commit
 
-
+- Integración de basics 04/02/2026
+	- class main-title/HTML
+	- body/CSS
+		- Estilos de letras
+		- color, background
+	- Boton de Units/App.js
+		- Formulación basica para cambio de unidades de medida
 - Creación de proyecto /10/2025
 	- Estructura principal añadida o actualizada:
 		- Index.html
 		- CSS/styles.css
 		- JS/app.js
 		- Integración de GIT y GitHub
+
+
+
+
+
+
 
 
 
