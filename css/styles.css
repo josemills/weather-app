@@ -124,7 +124,7 @@ header .brand {
 }
 
 /* =========================
-        BODY
+        BODY - TITLE H1
 ========================= */
 
 .main-title{
@@ -136,4 +136,48 @@ header .brand {
     line-height: 120%;
 }
 
- 
+ /* =========================
+        BODY - INPUT SEARCH
+========================= */
+
+.input-search {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'DM Sans';
+}
+
+.input-search input {
+    padding: 10px 12px 10px 40px; 
+    background: url("assets/web-document/icon-search.svg") no-repeat 12px center;
+    background-size: 16px;
+    background-color: var(--neutral-800);
+    color: var(--neutral-200);
+    font-size: 20px;
+    border-style: none;
+    border-radius: 8px;
+    width: 526px;
+    height: 56px;
+}
+
+.input-search input:hover {
+    background-color: var(--neutral-700);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-button {
+    background-color: var(--blue-500);
+    color: var(--neutral-0);
+    width: 114px;
+    border-radius: 8px;
+    border-style: none;
+    height: 56px;
+    font-size: 20px;
+}
+
+.search-button:hover{
+    background-color: var(--blue-700);
+}
